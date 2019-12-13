@@ -10,6 +10,7 @@ import Auth from "./components/Auth";
 function App() {
   return (
     <div className="App container">
+        <Auth>
       <div className="jumbotron">
         <Router>
           <Switch>
@@ -19,6 +20,7 @@ function App() {
           </Switch>
         </Router>
       </div>
+      </Auth>
     </div>
   );
 }
