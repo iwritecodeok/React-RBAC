@@ -4,6 +4,8 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import HomePage from './pages/home';
 import DashboardPage from './pages/dashboard';
+import CallbackPage from "./pages/callback";
+import Auth from "./components/Auth";
 
 function App() {
   return (
@@ -11,8 +13,9 @@ function App() {
       <div className="jumbotron">
         <Router>
           <Switch>
-            <Route exact path="/" component={HomePage}/>
-            <Route path="/dashboard" component={DashboardPage}/>
+          <Route exact path="/" component={HomePage}/>
+              <Route path="/dashboard" component={DashboardPage}/>
+              <Route path="/callback" component={CallbackPage}/>
           </Switch>
         </Router>
       </div>
